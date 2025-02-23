@@ -16,10 +16,9 @@ llm = OllamaLLM(model="ushinar:1b")  # Initialize the LLM model
 embedding_model = OllamaEmbeddings(model="nomic-embed-text:latest")  # Initialize the embedding model
 
 # Configure Streamlit App
-st.set_page_config(layout="wide", menu_items={'About':'This is BD MedChat'})  # Set the page layout to wide with custom menu item
-st.image("BD_logo.png", width=120)  # Display the logo image
-st.title('MedChat')  # Set the title of the app
-st.markdown("**BD MedChat uses AI. Check for mistakes.**")  # Add a markdown note
+st.set_page_config(layout="wide")  # Set the page layout to wide with custom menu item
+st.title('PDFChatBot')  # Set the title of the app
+st.markdown("**PDFChatBot uses AI. Check for mistakes.**")  # Add a markdown note
  
 # Initialize Session State
 st.session_state.setdefault('messages', [])  # Initialize 'messages' as an empty list
